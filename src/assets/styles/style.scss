@@ -6,7 +6,8 @@
 
 //Variables
 
-$color-keyBackgound: #7aa4aa;
+$color-keyBackgound-light: #7aa4aa;
+$color-keyBackgound-dark: #37595e;
 $color-black: #000000;
 
 .wrapper {
@@ -28,12 +29,31 @@ $color-black: #000000;
   resize: none;
 }
 
-.key {
+.keyboardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.button {
   width: 50px;
   height: 50px;
   border: 1px solid grey;
   margin: 3px;
   padding: 3px;
   float: left;
-  background-color: $color-keyBackgound;
+  background-color: $color-keyBackgound-light;
+}
+
+.functional_buttons {
+  background-color: $color-keyBackgound-dark;
+}
+
+.functional_buttons_flexGrowOneHalf {
+  flex-grow: 1.5;
+}
+
+.functional_buttons_flexGrowDouble {
+  flex-grow: 2;
 }

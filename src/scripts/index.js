@@ -9,6 +9,10 @@ const keyboardButtons = [
   "ControlLeft", "MetaLeft", "AltLeft", "Space", "AltRight", "ControlRight", "ArrowLeft", "ArrowDown", "ArrowRight"
 ];
 
+const keyboardButtonsFunctional = [
+  "Backquote", "Backspace", "Tab", "Delete", "CapsLock", "Enter", "ShiftLeft", "ArrowUp", "ShiftRight", "ControlLeft", "MetaLeft", "AltLeft", "AltRight", "ControlRight", "ArrowLeft", "ArrowDown", "ArrowRight"
+]
+
 /*document.addEventListener('keydown', function (event) {
   let key;
   let code;
@@ -29,10 +33,53 @@ let keyboardContainer = document.createElement('div');
 keyboardContainer.className = "keyboardContainer";
 wrapper.append(keyboardContainer);
 
+const createButtons = () => {
+  let result;
+  if(
+    keyboardButtons[i] === "Backquote" ||
+    keyboardButtons[i] === "Backspace" || 
+    keyboardButtons[i] === "Tab" || 
+    keyboardButtons[i] === "Delete" || 
+    keyboardButtons[i] === "CapsLock" ||
+    keyboardButtons[i] === "Enter" ||
+    keyboardButtons[i] === "ShiftLeft" || 
+    keyboardButtons[i] === "ArrowUp" || 
+    keyboardButtons[i] === "ShiftRight" ||
+    keyboardButtons[i] === "ControlLeft" || 
+    keyboardButtons[i] === "MetaLeft" || 
+    keyboardButtons[i] === "AltLeft" || 
+    keyboardButtons[i] === "AltRight" || 
+    keyboardButtons[i] === "ControlRight" || 
+    keyboardButtons[i] === "ArrowLeft" || 
+    keyboardButtons[i] === "ArrowDown" || 
+    keyboardButtons[i] === "ArrowRight"
+  ) {
+    if (
+      keyboardButtons[i] === "Backspace" || 
+      keyboardButtons[i] === "CapsLock" ||
+      keyboardButtons[i] === "Enter" ||
+      keyboardButtons[i] === "ShiftLeft" 
+    ) {
+      result += `<div class='button functional_buttons functional_buttons_flexGrowDouble'>${keyBoardObject[keyboardButtons[i]]}</div>`
+    } else if (
+      keyboardButtons[i] === "Tab" || 
+      keyboardButtons[i] === "Delete" || 
+      keyboardButtons[i] === "ShiftRight" ||
+      keyboardButtons[i] === "ControlLeft" || 
+      keyboardButtons[i] === "ControlRight"
+    ) {
+      result += `<div class='button functional_buttons functional_buttons_flexGrowOneHalf'>${keyBoardObject[keyboardButtons[i]]}</div>`
+    } else {
+      result += `<div class='button functional_buttons'>${keyBoardObject[keyboardButtons[i]]}</div>`
+    }   
+  } else {
+    result += `<div class='button'>${keyBoardObject[keyboardButtons[i]]}</div>`
+  }
+}
+
 const createKeyBoard = () => {
-  let result = '';
   for (let i = 0; i < keyboardButtons.length; i++){
-    result += `<div class='key'>${keyBoardObject[keyboardButtons[i]]}</div>`
+    createButtons();
   }
   keyboardContainer.insertAdjacentHTML('beforeend', result);
 }

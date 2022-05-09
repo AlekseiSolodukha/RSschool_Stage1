@@ -33,7 +33,19 @@
   resize: none;
 }
 
-.key {
+.keyboardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.button {
   width: 50px;
   height: 50px;
   border: 1px solid grey;
@@ -41,5 +53,21 @@
   padding: 3px;
   float: left;
   background-color: #7aa4aa;
+}
+
+.functional_buttons {
+  background-color: #37595e;
+}
+
+.functional_buttons_flexGrowOneHalf {
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+}
+
+.functional_buttons_flexGrowDouble {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 /*# sourceMappingURL=style.css.map */
