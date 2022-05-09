@@ -28,7 +28,7 @@
 }
 
 .output {
-  width: 100%;
+  width: 87%;
   height: 100px;
   resize: none;
 }
@@ -42,13 +42,14 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 87%;
 }
 
 .button {
   width: 50px;
   height: 50px;
   border: 1px solid grey;
+  border-radius: 3px;
   margin: 3px;
   padding: 3px;
   float: left;
@@ -60,14 +61,38 @@
 }
 
 .functional_buttons_flexGrowOneHalf {
-  -webkit-box-flex: 1.5;
-      -ms-flex-positive: 1.5;
-          flex-grow: 1.5;
-}
-
-.functional_buttons_flexGrowDouble {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  min-width: 60px;
+}
+
+.functional_buttons_flexGrowDouble {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 75px;
+}
+
+.space_button {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  max-width: 390px;
+  width: 100%;
+}
+
+.capsLock_button {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 85px;
+}
+
+.shiftLeft_button {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 85px;
 }
 /*# sourceMappingURL=style.css.map */

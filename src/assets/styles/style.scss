@@ -24,7 +24,7 @@ $color-black: #000000;
 }
 
 .output {
-  width: 100%;
+  width: 87%;
   height: 100px;
   resize: none;
 }
@@ -33,13 +33,14 @@ $color-black: #000000;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  width: 87%;
 }
 
 .button {
   width: 50px;
   height: 50px;
   border: 1px solid grey;
+  border-radius: 3px;
   margin: 3px;
   padding: 3px;
   float: left;
@@ -51,9 +52,27 @@ $color-black: #000000;
 }
 
 .functional_buttons_flexGrowOneHalf {
-  flex-grow: 1.5;
+  flex-grow: 2;
+  min-width: 60px;
 }
 
 .functional_buttons_flexGrowDouble {
-  flex-grow: 2;
+  flex-grow: 3;
+  min-width: 75px;
+}
+
+.space_button {
+  flex-grow: 4;
+  max-width: 390px;
+  width: 100%;
+}
+
+.capsLock_button {
+  flex-grow: 3;
+  min-width: 85px;
+}
+
+.shiftLeft_button {
+  flex-grow: 3;
+  min-width: 85px;
 }

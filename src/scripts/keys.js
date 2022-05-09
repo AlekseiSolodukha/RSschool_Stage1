@@ -12,7 +12,6 @@ const keyBoardObject = {
   "Digit0": "0",
   "Minus": "-",
   "Equal": "=",
-  "Backslash": "\\",
   "Backspace": "Backspace",
   "Tab": "Tab",
   "KeyQ": "q",
@@ -42,6 +41,7 @@ const keyBoardObject = {
   "Quote": "'",
   "Enter": "Enter",
   "ShiftLeft": "Shift",
+  "Backslash": "\\",
   "KeyZ": "z",
   "KeyX": "x",
   "KeyC": "c",
@@ -52,7 +52,7 @@ const keyBoardObject = {
   "Comma": ",",
   "Period": ".",
   "Slash": "/",
-  "ArrowUp": "ArrowUp",
+  "ArrowUp": "↑",
   "ShiftRight": "Shift",
   "ControlLeft": "Control",
   "MetaLeft": "Meta",
@@ -60,9 +60,9 @@ const keyBoardObject = {
   "Space": " ",
   "AltRight": "Alt",
   "ControlRight": "Control",
-  "ArrowLeft": "ArrowLeft",
-  "ArrowDown": "ArrowDown",
-  "ArrowRight": "ArrowRight"
+  "ArrowLeft": "←",
+  "ArrowDown": "↓",
+  "ArrowRight": "→"
 }
 
 export default keyBoardObject;
