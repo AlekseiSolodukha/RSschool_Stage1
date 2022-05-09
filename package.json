@@ -1,0 +1,27 @@
+{
+  "name": "virtual_keyboard",
+  "version": "1.0.0",
+  "description": "Virtual Keyboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekseiSolodukha/RSschool_Stage1.git"
+  },
+  "keywords": [
+    "virtual",
+    "keyboard"
+  ],
+  "author": "Solodukha Aleksei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlekseiSolodukha/RSschool_Stage1/issues"
+  },
+  "homepage": "https://github.com/AlekseiSolodukha/RSschool_Stage1#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
