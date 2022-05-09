@@ -59,27 +59,27 @@ const createKeyBoard = () => {
         keyboardButtons[i] === "Backspace" ||
         keyboardButtons[i] === "Enter" 
       ) {
-        result += `<div class='button functional_buttons functional_buttons_flexGrowDouble'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons functional_buttons_flexGrowDouble' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       } else if (
         keyboardButtons[i] === "Tab" || 
         keyboardButtons[i] === "Delete" || 
         keyboardButtons[i] === "ControlLeft" || 
         keyboardButtons[i] === "ControlRight"
       ) {
-        result += `<div class='button functional_buttons functional_buttons_flexGrowOneHalf'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons functional_buttons_flexGrowOneHalf' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       } else if (keyboardButtons[i] === "CapsLock") {
-        result += `<div class='button functional_buttons capsLock_button'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons capsLock_button' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       } else if (keyboardButtons[i] === "ShiftLeft") {
-        result += `<div class='button functional_buttons shiftLeft_button'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons shiftLeft_button' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       } else if (keyboardButtons[i] === "ShiftRight") {
-        result += `<div class='button functional_buttons'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       } else {
-        result += `<div class='button functional_buttons'>${keyBoardObject[keyboardButtons[i]]}</div>`
+        result += `<div class='button functional_buttons' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
       }   
     } else if (keyboardButtons[i] === "Space") {
-      result += `<div class='button space_button'>${keyBoardObject[keyboardButtons[i]]}</div>`
+      result += `<div class='button space_button' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
     } else {
-      result += `<div class='button'>${keyBoardObject[keyboardButtons[i]]}</div>`
+      result += `<div class='button' data='${keyboardButtons[i]}'>${keyBoardObject[keyboardButtons[i]]}</div>`
     }
 
   }
@@ -87,3 +87,11 @@ const createKeyBoard = () => {
 }
 
 createKeyBoard();
+
+document.addEventListener('keydown', function (event) {
+  document.querySelector(`.keyboardContainer .button[data='${event.code}']`).classList.add('active');
+});
+
+document.addEventListener('keyup', function (event) {
+  document.querySelector(`.keyboardContainer .button[data='${event.code}']`).classList.remove('active');
+});

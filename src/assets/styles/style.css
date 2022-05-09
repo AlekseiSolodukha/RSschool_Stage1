@@ -28,7 +28,7 @@
 }
 
 .output {
-  width: 87%;
+  width: 74%;
   height: 100px;
   resize: none;
 }
@@ -42,7 +42,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 87%;
+  width: 74%;
 }
 
 .button {
@@ -94,5 +94,9 @@
       -ms-flex-positive: 3;
           flex-grow: 3;
   min-width: 85px;
+}
+
+.active {
+  background-color: #a66be9;
 }
 /*# sourceMappingURL=style.css.map */

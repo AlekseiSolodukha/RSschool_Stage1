@@ -8,6 +8,7 @@
 
 $color-keyBackgound-light: #7aa4aa;
 $color-keyBackgound-dark: #37595e;
+$color-keyBackgound-active: #a66be9;
 $color-black: #000000;
 
 .wrapper {
@@ -24,7 +25,7 @@ $color-black: #000000;
 }
 
 .output {
-  width: 87%;
+  width: 74%;
   height: 100px;
   resize: none;
 }
@@ -33,7 +34,7 @@ $color-black: #000000;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 87%;
+  width: 74%;
 }
 
 .button {
@@ -75,4 +76,8 @@ $color-black: #000000;
 .shiftLeft_button {
   flex-grow: 3;
   min-width: 85px;
+}
+
+.active {
+  background-color: $color-keyBackgound-active;
 }
