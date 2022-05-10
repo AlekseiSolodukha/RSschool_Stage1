@@ -8,7 +8,7 @@
 
 $color-keyBackgound-light: #7aa4aa;
 $color-keyBackgound-dark: #37595e;
-$color-keyBackgound-active: #a66be9;
+$color-keyBackgound-active: #85cddd;
 $color-black: #000000;
 
 p {
@@ -52,6 +52,11 @@ p {
   padding: 3px;
   float: left;
   background-color: $color-keyBackgound-light;
+}
+
+.button:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .functional_buttons {
