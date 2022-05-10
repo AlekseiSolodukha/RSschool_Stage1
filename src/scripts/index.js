@@ -1,5 +1,5 @@
-//import '../assets/styles/style.css';
-import keyBoardObject from './keys.js'
+import '../assets/styles/style.css';
+import keyBoardObject from './keys.js';
 
 const keyboardButtons = [
   "Backquote", "Digit1", "Digit2", "Digit3", "Digit4", "Digit5", "Digit6", "Digit7", "Digit8", "Digit9", "Digit0", "Minus", "Equal", "Backspace",
@@ -27,11 +27,13 @@ let wrapper = document.createElement('div');
 wrapper.className = "wrapper";
 document.body.append(wrapper);
 
-wrapper.insertAdjacentHTML('afterbegin', '<textarea class="output" name="output" cols="147" rows="10" placeholder="Start tipping"></textarea>');
+wrapper.insertAdjacentHTML('afterbegin', '<textarea class="output" name="output" cols="147" rows="10" placeholder="Tap to start tipping"></textarea>');
 
 let keyboardContainer = document.createElement('div');
 keyboardContainer.className = "keyboardContainer";
 wrapper.append(keyboardContainer);
+
+wrapper.insertAdjacentHTML('beforeend', '<p>Клавиатура создна в операционной системе Windows</p>');
 
 const createKeyBoard = () => {
   let result = '';

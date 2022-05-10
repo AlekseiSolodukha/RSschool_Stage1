@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +24,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;

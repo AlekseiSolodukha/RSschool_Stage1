@@ -11,11 +11,17 @@ $color-keyBackgound-dark: #37595e;
 $color-keyBackgound-active: #a66be9;
 $color-black: #000000;
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 10px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;

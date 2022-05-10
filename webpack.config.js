@@ -11,26 +11,20 @@ module.exports = {
       keep: /\.git/,
     },
   },
-  mode: "development",
-  plugins: [new HtmlWebpackPlugin({
-    title: "Virtual Keyboard",
-    filename: "[hash].html",
-    template: "src/index.html",
-  })],
+  mode: "production",
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Virtual Keyboard",
+      filename: "[hash].html",
+      template: "./src/index.html",
+  })
+  ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader",],
-      },
+      }
     ],
   },
   devServer: {
