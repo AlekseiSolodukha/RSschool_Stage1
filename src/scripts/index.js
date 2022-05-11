@@ -1,5 +1,5 @@
 import '../assets/styles/style.css';
-import keyBoardObject from './keys.js';
+import keyBoardObject from './keys';
 
 const keyboardButtons = [
   'Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace',
@@ -33,7 +33,7 @@ wrapper.insertAdjacentHTML('beforeend', '<p>Клавиатура создна в
 
 const createKeyBoard = () => {
   let result = '';
-  for (let i = 0; i < keyboardButtons.length; i++) {
+  for (let i = 0; i < keyboardButtons.length; i += 1) {
     if (
       keyboardButtons[i] === 'Backquote'
       || keyboardButtons[i] === 'Backspace'
@@ -89,15 +89,13 @@ document.addEventListener('keydown', (event) => {
   document.querySelector(`.keyboardContainer .button[data='${event.code}']`).classList.add('active');
 });
 
-document.querySelectorAll('.keyboardContainer .button').forEach(function (el) {
-  el.addEventListener('mousedown', (event) => {
-    let a = el.getAttribute('data');
+document.querySelectorAll('.keyboardContainer .button').forEach((el) => {
+  el.addEventListener('mousedown', () => {
     el.classList.add('active');
-  })
-  el.addEventListener('mouseup', (event) => {
-    let a = el.getAttribute('data');
+  });
+  el.addEventListener('mouseup', () => {
     el.classList.remove('active');
-})
+  });
 });
 
 document.addEventListener('keyup', (event) => {

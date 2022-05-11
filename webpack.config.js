@@ -11,7 +11,7 @@ module.exports = {
       keep: /\.git/,
     },
   },
-  mode: "production",
+  mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Virtual Keyboard",

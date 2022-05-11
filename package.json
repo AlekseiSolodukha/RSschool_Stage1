@@ -7,7 +7,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-     "lint": "eslint src --ext .js"
+    "lint": "eslint src --ext .js"
   },
   "repository": {
     "type": "git",
