@@ -9,16 +9,6 @@ const keyboardButtons = [
   'ControlLeft', 'MetaLeft', 'AltLeft', 'Space', 'AltRight', 'ControlRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight',
 ];
 
-/* document.addEventListener('keydown', function (event) {
-  let key;
-  let code;
-  key = event.key;
-  code = event.code;
-  console.log(code);
-  keyBoardObject[code] = key;
-  console.log(keyBoardObject);
-}) */
-
 const wrapper = document.createElement('div');
 wrapper.className = 'wrapper';
 document.body.append(wrapper);
