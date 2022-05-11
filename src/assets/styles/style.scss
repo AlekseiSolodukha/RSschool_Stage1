@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Variables
+
+$color-keyBackgound-light: #7aa4aa;
+$color-keyBackgound-dark: #37595e;
+$color-keyBackgound-active: #85cddd;
+$color-black: #000000;
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  padding: 0 10px;
+  padding-top: 200px;
+}
+
+.output {
+  width: 74%;
+  height: 100px;
+  resize: none;
+}
+
+.keyboardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 74%;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: $color-keyBackgound-light;
+}
+
+.button:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.functional_buttons {
+  background-color: $color-keyBackgound-dark;
+}
+
+.functional_buttons_flexGrowOneHalf {
+  flex-grow: 2;
+  min-width: 60px;
+}
+
+.functional_buttons_flexGrowDouble {
+  flex-grow: 3;
+  min-width: 75px;
+}
+
+.space_button {
+  flex-grow: 4;
+  max-width: 390px;
+  width: 100%;
+}
+
+.capsLock_button {
+  flex-grow: 3;
+  min-width: 85px;
+}
+
+.shiftLeft_button {
+  flex-grow: 3;
+  min-width: 85px;
+}
+
+.active {
+  background-color: $color-keyBackgound-active;
+}

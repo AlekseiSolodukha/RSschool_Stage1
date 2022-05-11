@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  padding: 0 10px;
+  padding-top: 200px;
+}
+
+.output {
+  width: 74%;
+  height: 100px;
+  resize: none;
+}
+
+.keyboardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 74%;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: #7aa4aa;
+}
+
+.button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.functional_buttons {
+  background-color: #37595e;
+}
+
+.functional_buttons_flexGrowOneHalf {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  min-width: 60px;
+}
+
+.functional_buttons_flexGrowDouble {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 75px;
+}
+
+.space_button {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  max-width: 390px;
+  width: 100%;
+}
+
+.capsLock_button {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 85px;
+}
+
+.shiftLeft_button {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  min-width: 85px;
+}
+
+.active {
+  background-color: #85cddd;
+}
+/*# sourceMappingURL=style.css.map */
